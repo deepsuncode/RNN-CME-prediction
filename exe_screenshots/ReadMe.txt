@@ -1,1 +1,1 @@
-Screenshots of program execution for each method(gru/lstm) in the terminal and each timeframe (12,24,36,48,60).  Each screenshot shows the training of the model, option 1, followed by running it on the model after-- option 0.
+Screenshots of program execution for each method (gru/lstm) in the terminal and each timeframe (12,24,36,48,60).  Each screenshot shows the training of the model, option 1, followed by running it on the model after-- option 0.
