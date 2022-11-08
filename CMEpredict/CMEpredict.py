@@ -23,6 +23,7 @@ import sys
 import csv
 import os
 import warnings
+from keras import regularizers
 
 
 warnings.filterwarnings('ignore')
@@ -298,7 +299,9 @@ if __name__ == '__main__':
                                                type=type,
                                                time_window=time_window)
 
-        class_weights = class_weight.compute_class_weight('balanced', np.unique(y_train), y_train)
+        class_weights = class_weight.compute_class_weight(class_weight='balanced',
+                                                        classes=np.unique(y_train),
+                                                        y=y_train)
         class_weight_ = {0: class_weights[0], 1: class_weights[1]}
         print('done loading training data...')
 

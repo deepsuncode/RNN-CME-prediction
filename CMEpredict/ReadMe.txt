@@ -20,5 +20,4 @@ The fourth argument "0" denotes that the program will load and use the pre-train
 
 The output obtained by executing the above command is stored in the file named gru-x-output.csv or lstm-x-output.csv in the zip. This output file is the same as the normalized_testing_x file except that it has one additional column (the first column) titled "Predicted Label," which contains labels predicted by our program. The value "padding" is removed from the output file.
 
-Our program is run on Python 3.6.8, Keras 2.2.4, and TensorFlow 1.12.0.
-
+Our program is run on Python 3.10.7, Keras 2.10.0, and TensorFlow 2.10s.0.
