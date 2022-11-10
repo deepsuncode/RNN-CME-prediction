@@ -15,10 +15,9 @@ The second argument "gru" denotes that the program will make predictions using G
 An alternative option is "lstm" which uses LSTM. The usage is given as follows:
 	python3 CMEpredict.py lstm 12 0
 
-The third argument "12" denotes that the program will predict CMEs within the next 12 hours. Other options are 24, 36, 48 or 60 hours.
+The third argument "12" denotes that the program will predict CMEs within the next 12 hours. Other options are 24, 36, 48 or 60 hours. 
 The fourth argument "0" denotes that the program will load and use the pre-trained model, named gru-x-model.h5 or lstm-x-model.h5. If one would like to re-train the model, change "0" to "1".
 
 The output obtained by executing the above command is stored in the file named gru-x-output.csv or lstm-x-output.csv in the zip. This output file is the same as the normalized_testing_x file except that it has one additional column (the first column) titled "Predicted Label," which contains labels predicted by our program. The value "padding" is removed from the output file.
 
-Our program is run on Python 3.6.8, Keras 2.2.4, and TensorFlow 1.12.0.
-
+Our program is run on Python 3.10.7, Keras 2.10.0, and TensorFlow 2.10.0.
